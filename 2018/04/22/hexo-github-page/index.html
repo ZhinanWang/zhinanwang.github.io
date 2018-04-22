@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="教程," />
 
 
 
@@ -80,13 +80,14 @@
 
 
 <meta name="description" content="Hexo 建站Hexo 主题配置增加评论功能github page 绑定个人域名">
+<meta name="keywords" content="教程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用 Hexo 为自己在 Github 上建一个静态 Blog 站点">
 <meta property="og:url" content="http://yoursite.com/2018/04/22/hexo-github-page/index.html">
 <meta property="og:site_name" content="任意门">
 <meta property="og:description" content="Hexo 建站Hexo 主题配置增加评论功能github page 绑定个人域名">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-22T02:47:32.528Z">
+<meta property="og:updated_time" content="2018-04-22T03:06:02.507Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 Hexo 为自己在 Github 上建一个静态 Blog 站点">
 <meta name="twitter:description" content="Hexo 建站Hexo 主题配置增加评论功能github page 绑定个人域名">
@@ -285,6 +286,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/22/hexo-github-page/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/22/hexo-github-page/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -323,6 +334,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/教程/" rel="tag"># 教程</a>
+          
+        </div>
       
 
       
@@ -433,6 +450,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
@@ -643,6 +669,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'XmxRfgow462Hyn8vo5SuSMF5-gzGzoHsz',
+        appKey: 'H7dSpy9lJEpV0xHR8qjqSNEB',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
