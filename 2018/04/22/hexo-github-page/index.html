@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/15258595332534.png">
 <meta property="og:image" content="http://yoursite.com/images/15259183705955.jpg">
-<meta property="og:updated_time" content="2018-05-10T02:38:00.916Z">
+<meta property="og:updated_time" content="2018-05-24T05:15:30.977Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 Hexo 为自己在 Github 上建一个静态 Blog 站点">
 <meta name="twitter:description" content="重新建站，把整个流程记录了一下。 以下流程均为 Mac 环境，Win 会略有不同。">
@@ -362,8 +362,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <h3 id="4-2-增加评论功能"><a href="#4-2-增加评论功能" class="headerlink" title="4.2 增加评论功能"></a>4.2 增加评论功能</h3><p>Hexo 官方文档默认提供了几种评论的方案，但大部分都已经关闭，还要一些不太好用，这里建议使用 valine 轻型方案。</p>
 <p>首先到 <a href="https://leancloud.cn/dashboard/login.html#/signin" target="_blank" rel="noopener">Leancloud官网</a> 注册一个账号，并创建一个应用，进入应用-&gt;设置-&gt;应用key。</p>
-<p><img src="/images/15258595332534.png" alt=""></p>
-<p>拿到你的appid和appkey之后，打开<strong>主题配置文件</strong>搜索 valine，填入appid 和 appkey</p>
+<p><img src="/images/15258595332534.png" alt=""><br><code></code><br>拿到你的appid和appkey之后，打开<strong>主题配置文件</strong>搜索 valine，填入appid 和 appkey</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">valine:</span><br><span class="line">  enable: true</span><br><span class="line">  appid:   # your leancloud application appid</span><br><span class="line">  appkey:  # your leancloud application appkey</span><br><span class="line">  notify: false # mail notifier , https://github.com/xCss/Valine/wiki</span><br><span class="line">  verify: false # Verification code</span><br><span class="line">  placeholder: Just go go # comment box placeholder</span><br><span class="line">  avatar: mm # gravatar style</span><br><span class="line">  guest_info: nick,mail,link # custom comment header</span><br><span class="line">  pageSize: 10 # pagination size</span><br></pre></td></tr></table></figure>
 <p>  最后，在 Leancloud -&gt; 设置 -&gt; 安全中心 -&gt; Web 安全域名 把你的域名加进去。</p>
 <h2 id="5-绑定个性化域名"><a href="#5-绑定个性化域名" class="headerlink" title="5. 绑定个性化域名"></a>5. 绑定个性化域名</h2><p>yourname.github.io 这个域名比较长，如果你有把自己的域名转到 Github Page  的需求，那么请往下看。</p>
@@ -511,7 +510,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -524,7 +523,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
