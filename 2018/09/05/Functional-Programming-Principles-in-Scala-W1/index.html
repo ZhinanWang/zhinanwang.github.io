@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Python," />
+  <meta name="keywords" content="Scala," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Conda 是一款用于管理本地 Python 的工具，用它可以方便地管理环境和包，并包含了一些常用包。在工程开发中，经常碰到需要 2.7 和 3.6 两个版本 Python 切换的需求，就可以通过 conda 完成。">
-<meta name="keywords" content="Python">
+<meta name="description" content="Getting Started安装SBTSBT 是一个类似 Maven 的项目管理工具，提交作业需要用到，课程里给了详细的介绍，SBT Reference Manual  SBT tutorial。">
+<meta name="keywords" content="Scala">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Conda 常用命令">
-<meta property="og:url" content="http://yoursite.com/2018/05/23/anaconda/index.html">
+<meta property="og:title" content="Scala 函数式程序设计原理 Week1 笔记">
+<meta property="og:url" content="http://yoursite.com/2018/09/05/Functional-Programming-Principles-in-Scala-W1/index.html">
 <meta property="og:site_name" content="任意门">
-<meta property="og:description" content="Conda 是一款用于管理本地 Python 的工具，用它可以方便地管理环境和包，并包含了一些常用包。在工程开发中，经常碰到需要 2.7 和 3.6 两个版本 Python 切换的需求，就可以通过 conda 完成。">
+<meta property="og:description" content="Getting Started安装SBTSBT 是一个类似 Maven 的项目管理工具，提交作业需要用到，课程里给了详细的介绍，SBT Reference Manual  SBT tutorial。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-23T13:15:06.703Z">
+<meta property="og:updated_time" content="2018-09-05T03:21:38.058Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Conda 常用命令">
-<meta name="twitter:description" content="Conda 是一款用于管理本地 Python 的工具，用它可以方便地管理环境和包，并包含了一些常用包。在工程开发中，经常碰到需要 2.7 和 3.6 两个版本 Python 切换的需求，就可以通过 conda 完成。">
+<meta name="twitter:title" content="Scala 函数式程序设计原理 Week1 笔记">
+<meta name="twitter:description" content="Getting Started安装SBTSBT 是一个类似 Maven 的项目管理工具，提交作业需要用到，课程里给了详细的介绍，SBT Reference Manual  SBT tutorial。">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/23/anaconda/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/05/Functional-Programming-Principles-in-Scala-W1/"/>
 
 
 
 
 
-  <title>Conda 常用命令 | 任意门</title>
+  <title>Scala 函数式程序设计原理 Week1 笔记 | 任意门</title>
   
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/23/anaconda/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/05/Functional-Programming-Principles-in-Scala-W1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jonah Wang">
@@ -260,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Conda 常用命令</h1>
+          <h1 class="post-title" itemprop="name headline">Scala 函数式程序设计原理 Week1 笔记</h1>
         
 
         <div class="post-meta">
@@ -272,8 +272,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-23T20:54:11+08:00">
-                2018-05-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-05T11:18:55+08:00">
+                2018-09-05
               </time>
             
 
@@ -291,8 +291,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/05/23/anaconda/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/05/23/anaconda/" itemprop="commentCount"></span>
+                <a href="/2018/09/05/Functional-Programming-Principles-in-Scala-W1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/05/Functional-Programming-Principles-in-Scala-W1/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -320,43 +320,31 @@
       
 
       
-        <p>Conda 是一款用于管理本地 Python 的工具，用它可以方便地管理环境和包，并包含了一些常用包。在工程开发中，经常碰到需要 2.7 和 3.6 两个版本 Python 切换的需求，就可以通过 conda 完成。</p>
+        <h1 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h1><h2 id="安装SBT"><a href="#安装SBT" class="headerlink" title="安装SBT"></a>安装SBT</h2><p>SBT 是一个类似 Maven 的项目管理工具，提交作业需要用到，课程里给了详细的介绍，<a href="https://www.scala-sbt.org/0.13/docs/Getting-Started.html" target="_blank" rel="noopener">SBT Reference Manual</a>  <a href="https://github.com/shekhargulati/52-technologies-in-2016/blob/master/02-sbt/README.md" target="_blank" rel="noopener">SBT tutorial</a>。</p>
 <a id="more"></a>
-<h2 id="安装-conda"><a href="#安装-conda" class="headerlink" title="安装 conda"></a>安装 conda</h2><p>你可以到 <a href="https://www.anaconda.com/download/#macos" target="_blank" rel="noopener">Anaconda官网</a> 下载，如果网速不够理想，也可以到 <a href="https://mirror.tuna.tsinghua.edu.cn/help/anaconda/" target="_blank" rel="noopener">大陆镜像</a> 下载。下载之后，顺着指引一路安装。</p>
-<h2 id="启动编程环境"><a href="#启动编程环境" class="headerlink" title="启动编程环境"></a>启动编程环境</h2><p>conda 附带了很多 Python 的编程环境，打开终端，在 bash 里直接输入如下命令就可以启动，这里我常用的主要是 <code>python</code> , <code>ipython</code>, <code>jupyter notebook</code>，另外，在 IDE 如PyCharm里也可以直接用 conda 来管理环境。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">python</span><br><span class="line">ipython</span><br><span class="line">ipython qtconsole</span><br><span class="line">ipython notebook</span><br><span class="line">jupyter qtconsole</span><br><span class="line">spyder</span><br><span class="line">anaconda prompt</span><br></pre></td></tr></table></figure>
-<h2 id="环境管理"><a href="#环境管理" class="headerlink" title="环境管理"></a>环境管理</h2><p>创建环境，你可以单独创建一个 <code>py3</code> 的环境</p>
-<p><code>conda create -n py3 python=3</code></p>
-<p>使用环境，启用 Python 3 </p>
-<p><code>activate py3</code></p>
-<p>离开环境 </p>
-<p><code>deactivate</code></p>
-<p>列出环境清单 </p>
-<p><code>conda env list</code></p>
-<p>删除环境 </p>
-<p><code>conda env remove -n env_name</code></p>
-<p>导出环境配置 </p>
-<p><code>conda env export &gt; environmentName.yaml</code> 或 <code>pip freeze &gt; environmentName.txt</code></p>
-<p>导入环境配置</p>
-<p> <code>conda env update -f=/path/environmentName.yaml</code> 或 <code>pip install -r /path/environmentName.txt</code></p>
-<h2 id="安装包管理"><a href="#安装包管理" class="headerlink" title="安装包管理"></a>安装包管理</h2><p>在某个环境下，通过 conda 命令来管理环境下的安装包。</p>
-<p>列出包 </p>
-<p><code>conda/pip list</code></p>
-<p>安装包 </p>
-<p><code>conda/pip install package_name</code></p>
-<p>更新包 </p>
-<p><code>conda upgrade package_name</code></p>
-<p>更新所有的包 </p>
-<p><code>conda upgrade —all</code></p>
-<p>卸载包 </p>
-<p><code>conda remove package_name</code></p>
-<p>搜索包 </p>
-<p><code>conda search search_term</code></p>
-<hr>
+<h2 id="配置-IDE"><a href="#配置-IDE" class="headerlink" title="配置 IDE"></a>配置 IDE</h2><p>视频课程里用的是 Eclipse，但我还是选的 IDEA。</p>
+<h1 id="Functions-amp-Evaluation"><a href="#Functions-amp-Evaluation" class="headerlink" title="Functions &amp; Evaluation"></a>Functions &amp; Evaluation</h1><h2 id="Paradigm-范式"><a href="#Paradigm-范式" class="headerlink" title="Paradigm 范式"></a>Paradigm 范式</h2><blockquote>
+<p>In science, a <em>paradigm</em> describes distinct concepts or thought patterns in some scientific discipline.</p>
+</blockquote>
+<p>函数式编程定义：</p>
 <ul>
-<li>wiki ：<a href="https://zh.wikipedia.org/wiki/Anaconda_(Python%E5%8F%91%E8%A1%8C%E7%89%88)" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/Anaconda_(Python%E5%8F%91%E8%A1%8C%E7%89%88)</a></li>
-<li>初学python者自学anaconda的正确姿势是什么？？ - 猴子的回答 - 知乎 ： <a href="https://www.zhihu.com/question/58033789/answer/254673663" target="_blank" rel="noopener">https://www.zhihu.com/question/58033789/answer/254673663</a></li>
+<li>狭义概念：没有可变变量、指向或者命令式控制</li>
+<li>广义概念：集中于函数编写</li>
 </ul>
+<p>函数式编程优势</p>
+<ul>
+<li>更简单的因果法则</li>
+<li>更易模块化</li>
+<li>适于多核或云计算上并行化处理</li>
+</ul>
+<p>call-by-name:按照定义的顺序进行计算<br>call-by-value:按照数值的顺序进行计算<br>Scala 用的是 CBV(call-by-value)</p>
+<h2 id="if-else"><a href="#if-else" class="headerlink" title="if-else"></a>if-else</h2><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (conditional statement1) a </span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (conditional statement2) b </span><br><span class="line">    <span class="keyword">else</span> c</span><br></pre></td></tr></table></figure>
+<p>指定 val 是 CBV，如 <code>val x = 2; val y = square(x)</code> 中，y是4，而不是 sqare(x)。</p>
+<h2 id="recursion"><a href="#recursion" class="headerlink" title="recursion"></a>recursion</h2><p>tail-recursion 尾递归: If a function calls itself as its last acton, the function’s stack frame can be reused.</p>
+<h1 id="编程作业"><a href="#编程作业" class="headerlink" title="编程作业"></a>编程作业</h1><p>这周的编程作业主要是考递归。前两个题目都不难，最后一个 <a href="https://leetcode.com/problems/coin-change-2/" target="_blank" rel="noopener">Coin Change问题</a> 有些难度，在网上找到一个比较靠谱的<a href="https://algorithms.tutorialhorizon.com/dynamic-programming-coin-change-problem/" target="_blank" rel="noopener">解析</a>，可以这样理解这个递归过程：</p>
+<p>首先考虑 bad case情况，两个变量 money 和 coins 的异常值分别是 monty &lt; 0 和 coins.isEmpty,出现这种情况说明这条链路是不通的，故而返回值是 0。</p>
+<p>再考虑 money = 0 的情况，money = 0可以理解为找零已经完成，或者把 coins 里的空集找给对方就可以，所以是一条完成的链路，返回值是 1。</p>
+<p>最后就是 money &gt; 0、 coins 不为空的正常状态。这时可以将 countChange(money, coins) 按照 coins.head 的状态进行拆解，即第一种状态是使用 coins.head ，第二种状态是不使用 coins.head。使用 coins.head 后，可能的找零方式为 countChange(money - coins.head, coins)，如果不使用 coins.head ，则找零方式为 countChange(money, coins.tail)，两种状态分别的合集即是 countChange(money, coins)。</p>
 
       
     </div>
@@ -374,7 +362,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Python/" rel="tag"># Python</a>
+            <a href="/tags/Scala/" rel="tag"># Scala</a>
           
         </div>
       
@@ -387,8 +375,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/22/how-to-read/" rel="next" title="读书 | 如何阅读一本书">
-                <i class="fa fa-chevron-left"></i> 读书 | 如何阅读一本书
+              <a href="/2018/05/24/suburbia/" rel="next" title="杂谈 | 小城和父辈">
+                <i class="fa fa-chevron-left"></i> 杂谈 | 小城和父辈
               </a>
             
           </div>
@@ -396,10 +384,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/24/suburbia/" rel="prev" title="杂谈 | 小城和父辈">
-                杂谈 | 小城和父辈 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -529,7 +513,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-conda"><span class="nav-text">安装 conda</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动编程环境"><span class="nav-text">启动编程环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境管理"><span class="nav-text">环境管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装包管理"><span class="nav-text">安装包管理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Getting-Started"><span class="nav-text">Getting Started</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装SBT"><span class="nav-text">安装SBT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-IDE"><span class="nav-text">配置 IDE</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Functions-amp-Evaluation"><span class="nav-text">Functions &amp; Evaluation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Paradigm-范式"><span class="nav-text">Paradigm 范式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#if-else"><span class="nav-text">if-else</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#recursion"><span class="nav-text">recursion</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编程作业"><span class="nav-text">编程作业</span></a></li></ol></div>
             
 
           </div>
